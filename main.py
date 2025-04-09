@@ -1,12 +1,10 @@
 import pygame
-
-print("Outside main function")
+import sys
 
 def main():
-    print("DEBUG: Before message")
-    print("Starting Asteroids!")
-    print("DEBUG: After message")
+    print("Starting Asteroids!", flush=True)
+    sys.stdout.flush()  # Extra flush just to be sure
 
 if __name__ == "__main__":
-    print("Running main")
     main()
+
